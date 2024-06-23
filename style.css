@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --primary: #003166;
+  --primary-light: #0055b3;
+  --primary-dark: #001833;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  padding: 20px 120px;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+
+nav > div {
+  display: flex;
+  gap: 30px;
+  font-weight: 600;
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+#logo {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25px;
+  color: var(--primary);
+}
+
+#group-image {
+  width: 100vw;
+  height: 600px;
+  object-fit: cover;
+}
+
+#main-section {
+  padding: 20px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#break1 {
+  background-color: var(--primary-light);
+  width: 10px;
+  height: 10px;
+  border-radius: 99999px;
+}
+#break2 {
+  background-color: var(--primary-light);
+  width: 100px;
+  height: 10px;
+  border-radius: 99999px;
+}
+
+#main-section div {
+  display: flex;
+  gap: 5px;
+}
+
+footer {
+  background-color: var(--primary-dark);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  gap: 10px;
+  font-size: 12px;
+  padding: 20px 0;
+}
+footer div {
+  display: flex;
+  gap: 5px;
+}
+footer div a img {
+  width: 20px;
+}
+
+#gallery-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+#gallery-container > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#gallery-container > div > img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#member-container {
+  padding: 20px 120px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.member {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  height: 200px;
+
+  -webkit-box-shadow: 4px 15px 36px -10px #ddd;
+  -moz-box-shadow: 4px 15px 36px -10px #ddd;
+  box-shadow: 4px 15px 36px -10px #ddd;
+}
+.member:hover{
+  transform: translateY(-5px);
+  transition: all 0.5s ease-in-out;
+  -webkit-box-shadow: 4px 15px 36px -10px #000;
+  -moz-box-shadow: 4px 15px 36px -10px #000;
+  box-shadow: 4px 15px 36px -10px #000;
+}
+.member > img {
+  height: 100%;
+  border-radius: 20px;
+}
+.member > table {
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+.val {
+  font-weight: 500;
+}
+.member1 {
+  grid-area: 1/ 1/ 2/ 4;
+}
+.member2 {
+  grid-area: 2/ 2/ 3/ 5;
+}
+.member3 {
+  grid-area: 3/ 1/ 4/ 4;
+}
+.member4 {
+  grid-area: 4/ 2/ 5/ 5;
+}
+.member5 {
+  grid-area: 5/ 1/ 6/ 4;
+}
+.member6 {
+  grid-area: 6/ 2/ 7/ 5;
+}
